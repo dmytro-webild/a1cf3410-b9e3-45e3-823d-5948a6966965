@@ -87,7 +87,7 @@ export default function LandingPage() {
           href: "https://wa.me/244942552454",
         },
       ]}
-      imageSrc="http://img.b2bpic.net/free-photo/hospital-assistant-putting-oxigen-mask-sick-man-patient-after-stomatology-surgery-sitting-dental-chair-orthodontic-hospital-room-medical-consultation-dentist-doctor-examining-toohache_482257-4906.jpg"
+      imageSrc="http://img.b2bpic.net/free-photo/hospital-assistant-putting-oxigen-mask-sick-man-patient-after-stomatology-surgery-sitting-dental-chair-orthodontic-hospital-room-medical-consultation-dentist-doctor-examining-toohache_482257-4906.jpg?_wi=1"
       mediaAnimation="slide-up"
       avatars={[
         {
@@ -185,7 +185,7 @@ export default function LandingPage() {
             bentoComponent: "reveal-icon",
             icon: Star,
           },
-          imageSrc: "http://img.b2bpic.net/free-photo/hospital-assistant-putting-oxigen-mask-sick-man-patient-after-stomatology-surgery-sitting-dental-chair-orthodontic-hospital-room-medical-consultation-dentist-doctor-examining-toohache_482257-4906.jpg",
+          imageSrc: "http://img.b2bpic.net/free-photo/hospital-assistant-putting-oxigen-mask-sick-man-patient-after-stomatology-surgery-sitting-dental-chair-orthodontic-hospital-room-medical-consultation-dentist-doctor-examining-toohache_482257-4906.jpg?_wi=2",
           imageAlt: "portrait happy woman",
         },
         {
