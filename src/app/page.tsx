@@ -94,12 +94,12 @@ export default function LandingPage() {
       textboxLayout="default"
       useInvertedBackground={true}
       features={[
-        { title: "Limpeza Dentária", description: "Higiene profunda e saúde gengival.", bentoComponent: { bentoComponent: "reveal-icon", icon: Sparkles } },
-        { title: "Clareamento", description: "Sorriso mais branco e radiante.", bentoComponent: { bentoComponent: "reveal-icon", icon: Star } },
-        { title: "Ortodontia", description: "Alinhamento e estética dentária.", bentoComponent: { bentoComponent: "reveal-icon", icon: Layout } },
-        { title: "Extração", description: "Procedimentos seguros e precisos.", bentoComponent: { bentoComponent: "reveal-icon", icon: Shield } },
-        { title: "Implantes", description: "Recupere a sua função mastigatória.", bentoComponent: { bentoComponent: "reveal-icon", icon: Award } },
-        { title: "Tratamento", description: "Tratamento eficaz de cáries.", bentoComponent: { bentoComponent: "reveal-icon", icon: ShieldCheck } },
+        { title: "Limpeza Dentária", description: "Higiene profunda e saúde gengival.", bentoComponent: "reveal-icon", icon: Sparkles },
+        { title: "Clareamento", description: "Sorriso mais branco e radiante.", bentoComponent: "reveal-icon", icon: Star },
+        { title: "Ortodontia", description: "Alinhamento e estética dentária.", bentoComponent: "reveal-icon", icon: Layout },
+        { title: "Extração", description: "Procedimentos seguros e precisos.", bentoComponent: "reveal-icon", icon: Shield },
+        { title: "Implantes", description: "Recupere a sua função mastigatória.", bentoComponent: "reveal-icon", icon: Award },
+        { title: "Tratamento", description: "Tratamento eficaz de cáries.", bentoComponent: "reveal-icon", icon: ShieldCheck },
       ]}
       title="Nossos Serviços"
       description="Cuidado odontológico completo com tecnologia avançada."
