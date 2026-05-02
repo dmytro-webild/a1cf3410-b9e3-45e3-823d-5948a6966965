@@ -30,26 +30,11 @@ export default function LandingPage() {
   <div id="nav" data-section="nav">
       <NavbarStyleApple
       navItems={[
-        {
-          name: "Início",
-          id: "hero",
-        },
-        {
-          name: "Sobre",
-          id: "about",
-        },
-        {
-          name: "Serviços",
-          id: "services",
-        },
-        {
-          name: "Avaliações",
-          id: "testimonials",
-        },
-        {
-          name: "Contacto",
-          id: "contact",
-        },
+        { name: "Início", id: "hero" },
+        { name: "Sobre", id: "about" },
+        { name: "Serviços", id: "services" },
+        { name: "Avaliações", id: "testimonials" },
+        { name: "Contacto", id: "contact" },
       ]}
       brandName="Odonto Zoe"
     />
@@ -57,82 +42,35 @@ export default function LandingPage() {
 
   <div id="hero" data-section="hero">
       <HeroSplitKpi
-      background={{
-        variant: "plain",
-      }}
+      background={{ variant: "plain" }}
       title="Seu sorriso merece o melhor cuidado"
       description="Atendimento profissional em medicina dentária em Luanda."
       kpis={[
-        {
-          value: "5.0",
-          label: "Avaliação",
-        },
-        {
-          value: "942+",
-          label: "Atendimentos",
-        },
-        {
-          value: "12h",
-          label: "Atendimento diário",
-        },
+        { value: "5.0", label: "Avaliação" },
+        { value: "942+", label: "Atendimentos" },
+        { value: "12h", label: "Atendimento diário" },
       ]}
       enableKpiAnimation={true}
       buttons={[
-        {
-          text: "Agendar Consulta",
-          href: "#contact",
-        },
-        {
-          text: "Falar no WhatsApp",
-          href: "https://wa.me/244942552454",
-        },
+        { text: "Agendar Consulta", href: "#contact" },
+        { text: "Falar no WhatsApp", href: "https://wa.me/244942552454" },
       ]}
-      imageSrc="http://img.b2bpic.net/free-photo/hospital-assistant-putting-oxigen-mask-sick-man-patient-after-stomatology-surgery-sitting-dental-chair-orthodontic-hospital-room-medical-consultation-dentist-doctor-examining-toohache_482257-4906.jpg?_wi=1"
+      imageSrc="http://img.b2bpic.net/free-photo/hospital-assistant-putting-oxigen-mask-sick-man-patient-after-stomatology-surgery-sitting-dental-chair-orthodontic-hospital-room-medical-consultation-dentist-doctor-examining-toohache_482257-4906.jpg"
       mediaAnimation="slide-up"
       avatars={[
-        {
-          src: "http://img.b2bpic.net/free-photo/smiling-nurse-hospital-hallway_23-2151997625.jpg",
-          alt: "Dentista 1",
-        },
-        {
-          src: "http://img.b2bpic.net/free-photo/portrait-male-doctor-with-uniform-using-laptop-cabinet-working-checkup-appointments-desk-health-specialist-with-stethoscope-helping-with-prescription-medicine-treatment_482257-39448.jpg",
-          alt: "Dentista 2",
-        },
-        {
-          src: "http://img.b2bpic.net/free-photo/portrait-happy-african-american-doctor-nursing-home_637285-11403.jpg",
-          alt: "Dentista 3",
-        },
-        {
-          src: "http://img.b2bpic.net/free-photo/smiley-nurse-with-stethoscope_23-2148740054.jpg",
-          alt: "Dentista 4",
-        },
-        {
-          src: "http://img.b2bpic.net/free-photo/portrait-good-looking-curly-ethnic-woman-smiles-broadly-enjoys-day-off-has-happy-talk-with-interlocutor-discusses-holiday-preparation-wears-green-sweater-isolated-pink-wall_273609-42856.jpg",
-          alt: "Dentista 5",
-        },
+        { src: "http://img.b2bpic.net/free-photo/smiling-nurse-hospital-hallway_23-2151997625.jpg", alt: "Dentista 1" },
+        { src: "http://img.b2bpic.net/free-photo/portrait-male-doctor-with-uniform-using-laptop-cabinet-working-checkup-appointments-desk-health-specialist-with-stethoscope-helping-with-prescription-medicine-treatment_482257-39448.jpg", alt: "Dentista 2" },
+        { src: "http://img.b2bpic.net/free-photo/portrait-happy-african-american-doctor-nursing-home_637285-11403.jpg", alt: "Dentista 3" },
+        { src: "http://img.b2bpic.net/free-photo/smiley-nurse-with-stethoscope_23-2148740054.jpg", alt: "Dentista 4" },
+        { src: "http://img.b2bpic.net/free-photo/portrait-good-looking-curly-ethnic-woman-smiles-broadly-enjoys-day-off-has-happy-talk-with-interlocutor-discusses-holiday-preparation-wears-green-sweater-isolated-pink-wall_273609-42856.jpg", alt: "Dentista 5" },
       ]}
       avatarText="Nossa equipa qualificada"
       marqueeItems={[
-        {
-          type: "text",
-          text: "Implantes",
-        },
-        {
-          type: "text",
-          text: "Ortodontia",
-        },
-        {
-          type: "text",
-          text: "Clareamento",
-        },
-        {
-          type: "text",
-          text: "Limpeza",
-        },
-        {
-          type: "text",
-          text: "Cirurgia",
-        },
+        { type: "text", text: "Implantes" },
+        { type: "text", text: "Ortodontia" },
+        { type: "text", text: "Clareamento" },
+        { type: "text", text: "Limpeza" },
+        { type: "text", text: "Cirurgia" },
       ]}
     />
   </div>
@@ -142,21 +80,9 @@ export default function LandingPage() {
       useInvertedBackground={false}
       title="A Clínica Odonto Zoe"
       metrics={[
-        {
-          icon: CheckCircle,
-          label: "Atendimento",
-          value: "Personalizado",
-        },
-        {
-          icon: Shield,
-          label: "Qualidade",
-          value: "Segura",
-        },
-        {
-          icon: Zap,
-          label: "Equipamento",
-          value: "Moderno",
-        },
+        { icon: CheckCircle, label: "Atendimento", value: "Personalizado" },
+        { icon: Shield, label: "Qualidade", value: "Segura" },
+        { icon: Zap, label: "Equipamento", value: "Moderno" },
       ]}
       metricsAnimation="slide-up"
     />
@@ -168,66 +94,12 @@ export default function LandingPage() {
       textboxLayout="default"
       useInvertedBackground={true}
       features={[
-        {
-          title: "Limpeza Dentária",
-          description: "Higiene profunda e saúde gengival.",
-          bentoComponent: {
-            bentoComponent: "reveal-icon",
-            icon: Sparkles,
-          },
-          imageSrc: "http://img.b2bpic.net/free-photo/portrait-young-happy-woman-coat_1303-11053.jpg",
-          imageAlt: "portrait happy woman",
-        },
-        {
-          title: "Clareamento",
-          description: "Sorriso mais branco e radiante.",
-          bentoComponent: {
-            bentoComponent: "reveal-icon",
-            icon: Star,
-          },
-          imageSrc: "http://img.b2bpic.net/free-photo/hospital-assistant-putting-oxigen-mask-sick-man-patient-after-stomatology-surgery-sitting-dental-chair-orthodontic-hospital-room-medical-consultation-dentist-doctor-examining-toohache_482257-4906.jpg?_wi=2",
-          imageAlt: "portrait happy woman",
-        },
-        {
-          title: "Ortodontia",
-          description: "Alinhamento e estética dentária.",
-          bentoComponent: {
-            bentoComponent: "reveal-icon",
-            icon: Layout,
-          },
-          imageSrc: "http://img.b2bpic.net/free-photo/smiling-nurse-hospital-hallway_23-2151997624.jpg",
-          imageAlt: "portrait happy woman",
-        },
-        {
-          title: "Extração",
-          description: "Procedimentos seguros e precisos.",
-          bentoComponent: {
-            bentoComponent: "reveal-icon",
-            icon: Shield,
-          },
-          imageSrc: "http://img.b2bpic.net/free-photo/portait-handsome-european-elderly-man-smiles-positively-enjoys-retirement-wears-shirt-spectacles-has-perfect-white-teeth-isolated-beige-studio-wall_273609-44196.jpg",
-          imageAlt: "portrait happy woman",
-        },
-        {
-          title: "Implantes",
-          description: "Recupere a sua função mastigatória.",
-          bentoComponent: {
-            bentoComponent: "reveal-icon",
-            icon: Award,
-          },
-          imageSrc: "http://img.b2bpic.net/free-photo/portrait-jolly-man-home-feeling-happy-grateful-life_482257-123005.jpg",
-          imageAlt: "portrait happy woman",
-        },
-        {
-          title: "Tratamento",
-          description: "Tratamento eficaz de cáries.",
-          bentoComponent: {
-            bentoComponent: "reveal-icon",
-            icon: ShieldCheck,
-          },
-          imageSrc: "http://img.b2bpic.net/free-photo/young-beautiful-business-woman-wearing-id-card-smiling-confident-with-crossed-arms_839833-18875.jpg",
-          imageAlt: "portrait happy woman",
-        },
+        { title: "Limpeza Dentária", description: "Higiene profunda e saúde gengival.", bentoComponent: { bentoComponent: "reveal-icon", icon: Sparkles }, imageSrc: "http://img.b2bpic.net/free-photo/portrait-young-happy-woman-coat_1303-11053.jpg", imageAlt: "portrait happy woman" },
+        { title: "Clareamento", description: "Sorriso mais branco e radiante.", bentoComponent: { bentoComponent: "reveal-icon", icon: Star }, imageSrc: "http://img.b2bpic.net/free-photo/hospital-assistant-putting-oxigen-mask-sick-man-patient-after-stomatology-surgery-sitting-dental-chair-orthodontic-hospital-room-medical-consultation-dentist-doctor-examining-toohache_482257-4906.jpg", imageAlt: "portrait happy woman" },
+        { title: "Ortodontia", description: "Alinhamento e estética dentária.", bentoComponent: { bentoComponent: "reveal-icon", icon: Layout }, imageSrc: "http://img.b2bpic.net/free-photo/smiling-nurse-hospital-hallway_23-2151997624.jpg", imageAlt: "portrait happy woman" },
+        { title: "Extração", description: "Procedimentos seguros e precisos.", bentoComponent: { bentoComponent: "reveal-icon", icon: Shield }, imageSrc: "http://img.b2bpic.net/free-photo/portait-handsome-european-elderly-man-smiles-positively-enjoys-retirement-wears-shirt-spectacles-has-perfect-white-teeth-isolated-beige-studio-wall_273609-44196.jpg", imageAlt: "portrait happy woman" },
+        { title: "Implantes", description: "Recupere a sua função mastigatória.", bentoComponent: { bentoComponent: "reveal-icon", icon: Award }, imageSrc: "http://img.b2bpic.net/free-photo/portrait-jolly-man-home-feeling-happy-grateful-life_482257-123005.jpg", imageAlt: "portrait happy woman" },
+        { title: "Tratamento", description: "Tratamento eficaz de cáries.", bentoComponent: { bentoComponent: "reveal-icon", icon: ShieldCheck }, imageSrc: "http://img.b2bpic.net/free-photo/young-beautiful-business-woman-wearing-id-card-smiling-confident-with-crossed-arms_839833-18875.jpg", imageAlt: "portrait happy woman" },
       ]}
       title="Nossos Serviços"
       description="Cuidado odontológico completo com tecnologia avançada."
@@ -241,26 +113,11 @@ export default function LandingPage() {
       rating={5}
       author="Fernando Ruben"
       avatars={[
-        {
-          src: "http://img.b2bpic.net/free-photo/smiling-nurse-hospital-hallway_23-2151997624.jpg",
-          alt: "Fernando",
-        },
-        {
-          src: "http://img.b2bpic.net/free-photo/young-woman-walks-through-autumn-city-happy-body-female-with-curly-hair-raincoat_1321-4545.jpg",
-          alt: "Ana",
-        },
-        {
-          src: "http://img.b2bpic.net/free-photo/portrait-happy-carefree-woman-with-curly-blonde-hair-stands-with-crossed-arms-wears-casual-pink-turtleneck-smiles-broadly-has-white-teeth-poses-against-brown-studio-wall-emotions-concept_273609-59426.jpg",
-          alt: "Maria",
-        },
-        {
-          src: "http://img.b2bpic.net/free-photo/portrait-happy-young-woman-smiles-brroadly-wears-casual-turtleneck-feels-pleased-poses-glad-against-red-background-joyful-female-model-has-cheerful-expression-feels-optimistic-enjoys-good-day_273609-57948.jpg",
-          alt: "Joana",
-        },
-        {
-          src: "http://img.b2bpic.net/free-photo/portrait-smiling-man-beach_613910-9564.jpg",
-          alt: "Pedro",
-        },
+        { src: "http://img.b2bpic.net/free-photo/smiling-nurse-hospital-hallway_23-2151997624.jpg", alt: "Fernando" },
+        { src: "http://img.b2bpic.net/free-photo/young-woman-walks-through-autumn-city-happy-body-female-with-curly-hair-raincoat_1321-4545.jpg", alt: "Ana" },
+        { src: "http://img.b2bpic.net/free-photo/portrait-happy-carefree-woman-with-curly-blonde-hair-stands-with-crossed-arms-wears-casual-pink-turtleneck-smiles-broadly-has-white-teeth-poses-against-brown-studio-wall-emotions-concept_273609-59426.jpg", alt: "Maria" },
+        { src: "http://img.b2bpic.net/free-photo/portrait-happy-young-woman-smiles-brroadly-wears-casual-turtleneck-feels-pleased-poses-glad-against-red-background-joyful-female-model-has-cheerful-expression-feels-optimistic-enjoys-good-day_273609-57948.jpg", alt: "Joana" },
+        { src: "http://img.b2bpic.net/free-photo/portrait-smiling-man-beach_613910-9564.jpg", alt: "Pedro" },
       ]}
       ratingAnimation="slide-up"
       avatarsAnimation="slide-up"
@@ -271,21 +128,9 @@ export default function LandingPage() {
       <FaqSplitText
       useInvertedBackground={true}
       faqs={[
-        {
-          id: "1",
-          title: "Qual o horário de atendimento?",
-          content: "Estamos abertos das 08:00 às 19:00.",
-        },
-        {
-          id: "2",
-          title: "Onde estão localizados?",
-          content: "Rua Direita da Ende, Luanda.",
-        },
-        {
-          id: "3",
-          title: "Como agendar?",
-          content: "Pelo número 942 552 454 ou via WhatsApp.",
-        },
+        { id: "1", title: "Qual o horário de atendimento?", content: "Estamos abertos das 08:00 às 19:00." },
+        { id: "2", title: "Onde estão localizados?", content: "Rua Direita da Ende, Luanda." },
+        { id: "3", title: "Como agendar?", content: "Pelo número 942 552 454 ou via WhatsApp." },
       ]}
       sideTitle="Dúvidas?"
       faqsAnimation="slide-up"
@@ -295,9 +140,7 @@ export default function LandingPage() {
   <div id="contact" data-section="contact">
       <ContactSplit
       useInvertedBackground={false}
-      background={{
-        variant: "plain",
-      }}
+      background={{ variant: "plain" }}
       tag="Contacto"
       title="Agende sua Consulta"
       description="Estamos prontos para atender você com total excelência."
@@ -312,29 +155,15 @@ export default function LandingPage() {
       logoText="Odonto Zoe"
       columns={[
         {
-          title: "Clínica",
-          items: [
-            {
-              label: "Sobre",
-              href: "#about",
-            },
-            {
-              label: "Serviços",
-              href: "#services",
-            },
+          title: "Clínica",          items: [
+            { label: "Sobre", href: "#about" },
+            { label: "Serviços", href: "#services" },
           ],
         },
         {
-          title: "Legal",
-          items: [
-            {
-              label: "Privacidade",
-              href: "#",
-            },
-            {
-              label: "Termos",
-              href: "#",
-            },
+          title: "Legal",          items: [
+            { label: "Privacidade", href: "#" },
+            { label: "Termos", href: "#" },
           ],
         },
       ]}
