@@ -3,7 +3,7 @@
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
 import AboutMetric from '@/components/sections/about/AboutMetric';
-import ContactSplit from '@/components/sections/contact/ContactSplit';
+import ContactCenter from '@/components/sections/contact/ContactCenter';
 import FaqSplitText from '@/components/sections/faq/FaqSplitText';
 import FeatureBento from '@/components/sections/feature/FeatureBento';
 import FooterMedia from '@/components/sections/footer/FooterMedia';
@@ -138,14 +138,16 @@ export default function LandingPage() {
   </div>
 
   <div id="contact" data-section="contact">
-      <ContactSplit
-      useInvertedBackground={false}
-      background={{ variant: "plain" }}
+      <ContactCenter
       tag="Contacto"
       title="Agende sua Consulta"
-      description="Estamos prontos para atender você com total excelência."
-      imageSrc="http://img.b2bpic.net/free-photo/dentist-inviting-senior-man-consultation-dental-room-while-nurse-giving-patient-form-fill-indicating-sit-chair-waiting-area-slow-motion-shot-crowded-professional-orthodontist-office_482257-3575.jpg"
-      mediaAnimation="slide-up"
+      description="Preencha os dados abaixo e enviaremos sua solicitação diretamente para o nosso WhatsApp para agendamento."
+      onSubmit={(email) => {
+        const message = encodeURIComponent(`Olá, gostaria de agendar uma consulta. Email: ${email}`);
+        window.open(`https://wa.me/244942552454?text=${message}`, '_blank');
+      }}
+      inputPlaceholder="Seu email ou telefone"
+      buttonText="Enviar via WhatsApp"
     />
   </div>
 
