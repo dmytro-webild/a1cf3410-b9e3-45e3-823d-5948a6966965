@@ -55,7 +55,7 @@ export default function LandingPage() {
         { text: "Agendar Consulta", href: "#contact" },
         { text: "Falar no WhatsApp", href: "https://wa.me/244942552454" },
       ]}
-      imageSrc="http://img.b2bpic.net/free-photo/hospital-assistant-putting-oxigen-mask-sick-man-patient-after-stomatology-surgery-sitting-dental-chair-orthodontic-hospital-room-medical-consultation-dentist-doctor-examining-toohache_482257-4906.jpg"
+      imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Cvg40sIuxQ1g1acUIQhQQvsejl/uploaded-1777703207919-jizsl59f.png"
       mediaAnimation="slide-up"
       avatars={[
         { src: "http://img.b2bpic.net/free-photo/smiling-nurse-hospital-hallway_23-2151997625.jpg", alt: "Dentista 1" },
@@ -113,7 +113,7 @@ export default function LandingPage() {
       rating={5}
       author="Fernando Ruben"
       avatars={[
-        { src: "http://img.b2bpic.net/free-photo/smiling-nurse-hospital-hallway_23-2151997624.jpg", alt: "Fernando" },
+        { src: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Cvg40sIuxQ1g1acUIQhQQvsejl/uploaded-1777703207919-nlj4d1lp.png", alt: "Fernando" },
         { src: "http://img.b2bpic.net/free-photo/young-woman-walks-through-autumn-city-happy-body-female-with-curly-hair-raincoat_1321-4545.jpg", alt: "Ana" },
         { src: "http://img.b2bpic.net/free-photo/portrait-happy-carefree-woman-with-curly-blonde-hair-stands-with-crossed-arms-wears-casual-pink-turtleneck-smiles-broadly-has-white-teeth-poses-against-brown-studio-wall-emotions-concept_273609-59426.jpg", alt: "Maria" },
         { src: "http://img.b2bpic.net/free-photo/portrait-happy-young-woman-smiles-brroadly-wears-casual-turtleneck-feels-pleased-poses-glad-against-red-background-joyful-female-model-has-cheerful-expression-feels-optimistic-enjoys-good-day_273609-57948.jpg", alt: "Joana" },
@@ -141,12 +141,12 @@ export default function LandingPage() {
       <ContactCenter
       tag="Contacto"
       title="Agende sua Consulta"
-      description="Preencha os dados abaixo e enviaremos sua solicitação diretamente para o nosso WhatsApp para agendamento."
-      onSubmit={(email) => {
-        const message = encodeURIComponent(`Olá, gostaria de agendar uma consulta. Email: ${email}`);
+      description="Preencha o formulário abaixo e enviaremos sua solicitação para agendamento."
+      onSubmit={(formData) => {
+        const message = encodeURIComponent(`Olá, gostaria de agendar uma consulta. Nome: ${formData.name} ${formData.surname}. Contato: ${formData.email}`);
         window.open(`https://wa.me/244942552454?text=${message}`, '_blank');
       }}
-      inputPlaceholder="Seu email ou telefone"
+      inputPlaceholder="Nome, Sobrenome e Contato"
       buttonText="Enviar via WhatsApp"
       background={{ variant: "plain" }}
       useInvertedBackground={false}
