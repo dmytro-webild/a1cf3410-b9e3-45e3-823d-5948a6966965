@@ -142,11 +142,11 @@ export default function LandingPage() {
       tag="Contacto"
       title="Agende sua Consulta"
       description="Preencha o formulário abaixo e enviaremos sua solicitação para agendamento."
-      onSubmit={(formData) => {
-        const message = encodeURIComponent(`Olá, gostaria de agendar uma consulta. Nome: ${formData.name} ${formData.surname}. Contato: ${formData.email}`);
+      onSubmit={(email: string) => {
+        const message = encodeURIComponent(`Olá, gostaria de agendar uma consulta. Email: ${email}`);
         window.open(`https://wa.me/244942552454?text=${message}`, '_blank');
       }}
-      inputPlaceholder="Nome, Sobrenome e Contato"
+      inputPlaceholder="Seu email"
       buttonText="Enviar via WhatsApp"
       background={{ variant: "plain" }}
       useInvertedBackground={false}
