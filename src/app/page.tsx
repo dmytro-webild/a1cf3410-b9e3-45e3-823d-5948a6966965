@@ -148,6 +148,8 @@ export default function LandingPage() {
       }}
       inputPlaceholder="Seu email ou telefone"
       buttonText="Enviar via WhatsApp"
+      background={{ variant: "plain" }}
+      useInvertedBackground={false}
     />
   </div>
 
